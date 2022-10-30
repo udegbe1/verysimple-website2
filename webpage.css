@@ -1,0 +1,340 @@
+
+
+
+#header{
+    display: flex;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5PX 15PX rgba(0, 0, 0, 0.06);
+    position: sticky;
+    border-style: double;
+}
+
+#navbar{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-left: 240px;
+}
+
+#navbar li{
+    list-style:none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: gold;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "" ;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: WHITE;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    font-style: italic;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+    
+#hero{
+    background-image: url(" FLOWER IMAGES/rose.png.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 90%;
+    background-size: cover;
+    background-position: top right;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding:0 5px;
+    font-size: 40px;
+    color:RED;
+}
+
+#hero h1{
+    color: BLACK;
+    font-style: italic;
+}
+
+#hero button{
+    background-image: url("IMAGES/LOGO 1.PNG.jpg");
+    background-color: transparent;
+    color: green;
+    border: 0;
+    padding: 14px, 80px, 14px, 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221,0.1);
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h5{
+    display: inline-block;
+    padding: 9px 6px 6px 6px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rebeccapurple;
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h5{
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h5{
+    background-color: VIOLET;
+}
+
+#feature .fe-box:nth-child(4) h5{
+    background-color: PINK;
+}
+
+#feature .fe-box:nth-child(5) h5{
+    background-color: GOLD;
+}
+
+
+#product1{
+    text-align: center;
+}
+
+#product1 h2 {
+    border-style: solid;
+    border-color:violet;
+    border-radius: 30px;
+    border-width: 5 px;
+
+}
+
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px;
+    flex-wrap: wrap;  
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1.pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+   
+}
+
+#product1 .pro .des span{
+    color: blue;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+}
+
+#product1 .pro .des h3{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: BLACK;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: FLEX;
+    background-image: url("FLOWER IMAGES/WET ROSE.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: GOLD;
+    font-size: 30px; 
+    padding-top: 10px;
+    margin-left: 30PX;
+}
+ 
+#banner h2{
+    color: white;
+    font-size: 20px;
+    padding:  2px 0;
+    margin-left: 30PX;
+}
+
+#banner h2 span{
+    color: gold;
+}
+
+#banner .normal button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: #000;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    margin-left: 30PX;
+}
+ 
+#sm-banner .white button{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color:transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner .normal button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
